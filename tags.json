@@ -1,0 +1,44 @@
+[
+  {
+    "tag": "Religion",
+    "count": 6,
+    "category": "Theme",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Travel",
+    "count": 6,
+    "category": "Topic",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Gender/Sexuality",
+    "count": 5,
+    "category": "People",
+    "status": "Strong Support",
+    "note": "Can we have separate tags for gender and sexuality?"
+  },
+  {
+    "tag": "Poetry",
+    "count": 4,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Diary",
+    "count": 2,
+    "category": "Genre",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Child",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  }
+]
