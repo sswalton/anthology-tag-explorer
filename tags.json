@@ -14,16 +14,296 @@
     "note": ""
   },
   {
+    "tag": "Collaboration",
+    "count": 6,
+    "category": "Conditions of Creation",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Race",
+    "count": 5,
+    "category": "People",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Empire",
+    "count": 5,
+    "category": "Theme",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Science",
+    "count": 5,
+    "category": "Topic",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Class",
+    "count": 5,
+    "category": "Theme",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "translation",
+    "count": 5,
+    "category": "Modes",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Schoolwork / educational material",
+    "count": 5,
+    "category": "Conditions of Creation",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "Diary/Journals",
+    "count": 5,
+    "category": "Genre",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
     "tag": "Gender/Sexuality",
     "count": 5,
     "category": "People",
     "status": "Strong Support",
-    "note": "Can we have separate tags for gender and sexuality?"
+    "note": "Can we have separate tags for \"gender\" and \"sexuality\"?"
+  },
+  {
+    "tag": "School",
+    "count": 5,
+    "category": "Topic",
+    "status": "Strong Support",
+    "note": ""
+  },
+  {
+    "tag": "periodical",
+    "count": 4,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
   },
   {
     "tag": "Poetry",
     "count": 4,
     "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Visual",
+    "count": 4,
+    "category": "Modes",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Non-Fiction Prose",
+    "count": 4,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Correspondence",
+    "count": 4,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Drama",
+    "count": 4,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Material culture",
+    "count": 4,
+    "category": "Material Culture",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Manuscript",
+    "count": 4,
+    "category": "Material Culture",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Nature",
+    "count": 4,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Death",
+    "count": 4,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Illustration",
+    "count": 4,
+    "category": "Material Culture",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Decorative Arts",
+    "count": 4,
+    "category": "Modes",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Manuscript / unpublished",
+    "count": 4,
+    "category": "Modes",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Education",
+    "count": 4,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Environment/enviromentalism",
+    "count": 4,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Slavery",
+    "count": 4,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "War",
+    "count": 4,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Amateur journalism",
+    "count": 3,
+    "category": "Conditions of Creation",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Prose, Fiction",
+    "count": 3,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Prose, Non-Fiction",
+    "count": 3,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Novel",
+    "count": 3,
+    "category": "Genre",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Photography",
+    "count": 3,
+    "category": "Modes",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Cartography",
+    "count": 3,
+    "category": "Modes",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Family/Community",
+    "count": 3,
+    "category": "People",
+    "status": "Moderate Support",
+    "note": "Can we have a separate tag for \"community\" alone?"
+  },
+  {
+    "tag": "Parents",
+    "count": 3,
+    "category": "People",
+    "status": "Moderate Support",
+    "note": "possibly \"parent\" rather than plural?"
+  },
+  {
+    "tag": "Teachers",
+    "count": 3,
+    "category": "People",
+    "status": "Moderate Support",
+    "note": "possibly \"teacher\" rather than plural?"
+  },
+  {
+    "tag": "Nation",
+    "count": 3,
+    "category": "Region",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Philosophy/the Self",
+    "count": 3,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Mythology/History",
+    "count": 3,
+    "category": "Theme",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Currency (money)",
+    "count": 3,
+    "category": "Topic",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Clothing",
+    "count": 3,
+    "category": "Topic",
+    "status": "Moderate Support",
+    "note": ""
+  },
+  {
+    "tag": "Agriculture",
+    "count": 3,
+    "category": "Topic",
     "status": "Moderate Support",
     "note": ""
   },
@@ -35,9 +315,1038 @@
     "note": ""
   },
   {
+    "tag": "family periodicals",
+    "count": 2,
+    "category": "Conditions of Creation",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Periodical publication",
+    "count": 2,
+    "category": "Genre",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Diary/Journal",
+    "count": 2,
+    "category": "Genre",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Poetry/Verse",
+    "count": 2,
+    "category": "Genre",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Letter or Correspondence",
+    "count": 2,
+    "category": "Genre",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Decoration/Design",
+    "count": 2,
+    "category": "Material Culture",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Fragment",
+    "count": 2,
+    "category": "Material Culture",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Family",
+    "count": 2,
+    "category": "People",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Race & Ethnicity",
+    "count": 2,
+    "category": "People",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Sexuality",
+    "count": 2,
+    "category": "People",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "schoolmates",
+    "count": 2,
+    "category": "People",
+    "status": "Limited Support",
+    "note": "possibly \"schoolmate\" rather than plural?"
+  },
+  {
+    "tag": "Early Modern + Age of Exploration",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Victorian/Industrial Age & Westward Expansion",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Gilded Age",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Restoration, Colonial Period, & Enlightenment",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Romanticism & Regency",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Modernism and WWI",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "WWII and After",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Colonies (British) or Colonial",
+    "count": 2,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Labor",
+    "count": 2,
+    "category": "Theme",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Mission/Missionary",
+    "count": 2,
+    "category": "Theme",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Animal",
+    "count": 2,
+    "category": "Topic",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Handwriting",
+    "count": 1,
+    "category": "Material Culture",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Youth-produced culture",
+    "count": 1,
+    "category": "Age",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Current Repository/Archival information",
+    "count": 1,
+    "category": "Author Information",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Adult/Child Collaboration",
+    "count": 1,
+    "category": "Conditions of Creation",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Home",
+    "count": 1,
+    "category": "Conditions of Creation",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Pentimento",
+    "count": 1,
+    "category": "Material Culture",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Needlework",
+    "count": 1,
+    "category": "Material Culture",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "deletion",
+    "count": 1,
+    "category": "Material Culture",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Drawing (or Image)",
+    "count": 1,
+    "category": "Modes",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Written text",
+    "count": 1,
+    "category": "Modes",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Material",
+    "count": 1,
+    "category": "Modes",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Monograms",
+    "count": 1,
+    "category": "Modes",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "photographs",
+    "count": 1,
+    "category": "Modes",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Editing",
+    "count": 1,
+    "category": "Modes",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Sibling",
+    "count": 1,
+    "category": "People",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Middle Ages",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Eighteenth Century",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Nineteenth Century",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Twentieth Century and Twenty-First Century",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Ante-Bellum",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Modernism",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Romanticism",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Victorianism",
+    "count": 1,
+    "category": "Periods",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Weather (Adverse)",
+    "count": 1,
+    "category": "Theme",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Flora & Fauna",
+    "count": 1,
+    "category": "Theme",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Sacred Traditions/Rituals",
+    "count": 1,
+    "category": "Theme",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Religion?",
+    "count": 1,
+    "category": "Theme",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
+    "tag": "Exchange/Trade",
+    "count": 1,
+    "category": "Topic",
+    "status": "Limited Support",
+    "note": ""
+  },
+  {
     "tag": "Child",
     "count": 0,
     "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Africa",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Adult (22+)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Youth (12-21)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Adolescent",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Child (0-11)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Early Modern",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "British",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Europe",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Literary",
+    "count": 0,
+    "category": "Topic",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Youth (12-25)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Adult (25+)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Infant (0-2)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Child (3-11)",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "adult/child",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Infant",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Youth",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Adult",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Child-produced culture",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "child/child",
+    "count": 0,
+    "category": "Age",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Technologies of production",
+    "count": 0,
+    "category": "Conditions of Creation",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "school productions",
+    "count": 0,
+    "category": "Conditions of Creation",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Toy presses",
+    "count": 0,
+    "category": "Conditions of Creation",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Prose Fiction",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Musical",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Fiction Prose",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Journal",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Short story",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Encyclopedias",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Letters",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Literary juvenilia",
+    "count": 0,
+    "category": "Genre",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "samplers",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Illustrations",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Fair Copy",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Visual text",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "insertion",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Erasure",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Ink",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Pencil",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Obscured",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Line",
+    "count": 0,
+    "category": "Material Culture",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Written",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Visual Art",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Decorative Art",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "1st Edition",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Herbaria",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "“Fine” art",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "“crafts”",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "illegible",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Marked Out/Crossed Out/Marked Through",
+    "count": 0,
+    "category": "Modes",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Gender and Sexuality",
+    "count": 0,
+    "category": "People",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Gender & Sexuality",
+    "count": 0,
+    "category": "People",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Identity",
+    "count": 0,
+    "category": "People",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Editors",
+    "count": 0,
+    "category": "People",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Illustrators",
+    "count": 0,
+    "category": "People",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Authors",
+    "count": 0,
+    "category": "People",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "15th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "12th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "13th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "14th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "16th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "17th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "18th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "19th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "20th c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "21st c",
+    "count": 0,
+    "category": "Periods",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "United States",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Europe (including UK?)",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "African",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Asia",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "North America",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Oceania",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "South America",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Fields",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "China",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Geography",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "India",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "South Asia",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "River",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Field",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Desert",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "UK",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "US",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "North",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "South",
+    "count": 0,
+    "category": "Region",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Childhood-related ideas",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Childhood-related theories",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Natural World",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Networks",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Culture",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Funeral",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Slave Trade",
+    "count": 0,
+    "category": "Theme",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Musical Instrument",
+    "count": 0,
+    "category": "Topic",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Camp/Encampment",
+    "count": 0,
+    "category": "Topic",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Habitation",
+    "count": 0,
+    "category": "Topic",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Weapon",
+    "count": 0,
+    "category": "Topic",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Expedition",
+    "count": 0,
+    "category": "Topic",
+    "status": "Not Selected",
+    "note": ""
+  },
+  {
+    "tag": "Trade/Exchange",
+    "count": 0,
+    "category": "Topic",
     "status": "Not Selected",
     "note": ""
   }
