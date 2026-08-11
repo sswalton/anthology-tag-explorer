@@ -175,3 +175,24 @@ h1 {
 .similar-outline {
     border: 2px solid #8e44ad;
 }
+.view-toggle{
+    margin:15px 0;
+    display:flex;
+    gap:10px;
+}
+
+.active-view{
+    background:#333 !important;
+    color:white;
+}
+
+.list-row{
+    display:flex;
+    justify-content:space-between;
+    padding:6px 0;
+    border-bottom:1px solid #eee;
+}
+
+.list-row:last-child{
+    border-bottom:none;
+}
