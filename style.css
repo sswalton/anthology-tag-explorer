@@ -236,3 +236,8 @@ h1 {
 .cluster ul{
     margin-bottom:0;
 }
+CSS
+#overlap-section{
+    display:none;
+}
+``
