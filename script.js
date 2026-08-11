@@ -1,5 +1,6 @@
 let tags = [];
 let activeFilter = "all";
+let currentView = "tags";
 
 fetch("tags.json")
   .then(response => response.json())
@@ -8,25 +9,62 @@ fetch("tags.json")
     render();
   });
 
+document
+  .getElementById("search")
+  .addEventListener("input", render);
+
+document
+  .getElementById("tag-view-btn")
+  .addEventListener("click", () => {
+
+    currentView = "tags";
+
+    document
+      .getElementById("tag-view-btn")
+      .classList.add("active-view");
+
+    document
+      .getElementById("list-view-btn")
+      .classList.remove("active-view");
+
+    render();
+  });
+
+document
+  .getElementById("list-view-btn")
+  .addEventListener("click", () => {
+
+    currentView = "list";
+
+    document
+      .getElementById("list-view-btn")
+      .classList.add("active-view");
+
+    document
+      .getElementById("tag-view-btn")
+      .classList.remove("active-view");
+
+    render();
+  });
+
 document.addEventListener("click", event => {
 
-  if (!event.target.classList.contains("filter-btn")) {
+  if (!event.target.dataset.filter) {
     return;
   }
 
   document
-    .querySelectorAll(".filter-btn")
+    .querySelectorAll(".filter-btn[data-filter]")
     .forEach(btn => btn.classList.remove("active"));
 
   event.target.classList.add("active");
-  activeFilter = event.target.dataset.filter;
+
+  activeFilter =
+    event.target.dataset.filter;
 
   render();
-});
 
-document
-  .getElementById("search")
-  .addEventListener("input", render);
+});
 
 function render() {
 
@@ -53,19 +91,28 @@ function render() {
       matchesSearch &&
       tag.status === activeFilter
     );
+
   });
 
   const strong =
-    filtered.filter(tag => tag.status === "Strong Support");
+    filtered.filter(
+      tag => tag.status === "Strong Support"
+    );
 
   const moderate =
-    filtered.filter(tag => tag.status === "Moderate Support");
+    filtered.filter(
+      tag => tag.status === "Moderate Support"
+    );
 
   const limited =
-    filtered.filter(tag => tag.status === "Limited Support");
+    filtered.filter(
+      tag => tag.status === "Limited Support"
+    );
 
   const notSelected =
-    filtered.filter(tag => tag.status === "Not Selected");
+    filtered.filter(
+      tag => tag.status === "Not Selected"
+    );
 
   updateHeadings(
     strong.length,
@@ -125,6 +172,26 @@ function drawGroup(
 
   container.innerHTML = "";
 
+  if (currentView === "list") {
+
+    data.forEach(tag => {
+
+      const row =
+        document.createElement("div");
+
+      row.className = "list-row";
+
+      row.innerHTML = `
+        <span>${tag.tag}${tag.note ? " ⚠" : ""}</span>
+        <span>${tag.count}</span>
+      `;
+
+      container.appendChild(row);
+    });
+
+    return;
+  }
+
   data.forEach(tag => {
 
     const pill =
@@ -132,9 +199,6 @@ function drawGroup(
 
     pill.className =
       `pill ${colorClass} ${tag.note ? "review" : ""}`;
-
-    const noteIcon =
-      tag.note ? " ⚠" : "";
 
     const noteSection =
       tag.note
@@ -146,7 +210,7 @@ function drawGroup(
         : "";
 
     pill.innerHTML = `
-      ${tag.tag} (${tag.count})${noteIcon}
+      ${tag.tag} (${tag.count})${tag.note ? " ⚠" : ""}
 
       <div class="tooltip">
         <strong>${tag.tag}</strong>
@@ -164,5 +228,6 @@ function drawGroup(
     `;
 
     container.appendChild(pill);
+
   });
 }
