@@ -13,6 +13,7 @@ h1{
 
 .subtitle{
     color:#666;
+    margin-bottom:20px;
 }
 
 .toolbar{
@@ -39,6 +40,11 @@ h1{
     border-radius:20px;
     cursor:pointer;
     background:#ddd;
+    transition:.2s;
+}
+
+.filter-btn:hover{
+    background:#ccc;
 }
 
 .filter-btn.active{
@@ -50,6 +56,10 @@ h1{
     margin-top:35px;
 }
 
+.group h2{
+    margin-bottom:15px;
+}
+
 .pill-container{
     display:flex;
     flex-wrap:wrap;
@@ -57,26 +67,16 @@ h1{
 }
 
 .pill{
-2
-padding:8px 14px;
-3
-border-radius:999px;
-4
-cursor:pointer;
-5
-font-size:.95rem;
-6
-transition:.2s;
-7
-position:relative;
-8
-z-index:1;
-9
+    padding:8px 14px;
+    border-radius:999px;
+    cursor:pointer;
+    font-size:.95rem;
+    transition:.2s;
+    position:relative;
 }
 
 .pill:hover{
     transform:translateY(-1px);
-    z-index:1000;
 }
 
 .strong{
@@ -100,25 +100,36 @@ z-index:1;
 }
 
 .tooltip{
-2
-display:none;
-3
-z-index:9999;
-4
+    display:none;
 }
 
 .pill:hover .tooltip{
     display:block;
     position:absolute;
-    top:110%;
-    left:0;
-    width:260px;
+
+    bottom:120%;
+    left:50%;
+    transform:translateX(-50%);
+
+    width:280px;
+
     background:white;
     border:1px solid #ddd;
-    padding:12px;
     border-radius:10px;
-    z-index:999;
-    box-shadow:0 2px 10px rgba(0,0,0,.1);
+    padding:12px;
+
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+
+    z-index:9999;
+
+    line-height:1.4;
+    font-size:.9rem;
+}
+
+.tooltip hr{
+    border:none;
+    border-top:1px solid #ddd;
+    margin:8px 0;
 }
 
 #summary{
@@ -134,6 +145,7 @@ z-index:9999;
     padding:10px 14px;
     border-radius:10px;
 }
+
 .legend{
     margin:15px 0;
     display:flex;
@@ -158,4 +170,11 @@ z-index:9999;
 .review-outline{
     background:white;
     border:2px solid #f39c12;
+}
+
+/* Future-proofing for overlap highlighting */
+
+.similar-outline{
+    background:white;
+    border:2px solid #8e44ad;
 }
