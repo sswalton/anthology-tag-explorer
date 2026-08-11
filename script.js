@@ -183,7 +183,7 @@ function drawGroup(
 
 row.innerHTML = `
   <span>${tag.tag}${tag.note ? " ⚠" : ""}</span>
-  <span>${tag.count} votes</span>
+  <span>${tag.count}</span>
 `;
       container.appendChild(row);
     });
