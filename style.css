@@ -241,3 +241,12 @@ CSS
     display:none;
 }
 ``
+
+a.view-btn{
+    display:inline-block;
+    padding:8px 14px;
+    border-radius:20px;
+    background:#ddd;
+    color:#222;
+    text-decoration:none;
+}
