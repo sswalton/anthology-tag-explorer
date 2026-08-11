@@ -242,6 +242,11 @@ a.view-btn{
     padding:8px 14px;
     border-radius:20px;
     background:#ddd;
-    color:#222;
+    color:inherit;
     text-decoration:none;
+    font:inherit;
+}
+
+a.view-btn:hover{
+    background:#ccc;
 }
