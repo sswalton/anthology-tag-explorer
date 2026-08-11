@@ -181,7 +181,7 @@ function drawGroup(
 
       row.className = "list-row";
 
-     row.innerHTML = `
+row.innerHTML = `
   <span>${tag.tag}${tag.note ? " ⚠" : ""}</span>
   <span>${tag.count} votes</span>
 `;
