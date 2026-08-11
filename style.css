@@ -196,3 +196,10 @@ h1 {
 .list-row:last-child{
     border-bottom:none;
 }
+.view-btn{
+    border:none;
+    padding:8px 14px;
+    border-radius:20px;
+    cursor:pointer;
+    background:#ddd;
+}
