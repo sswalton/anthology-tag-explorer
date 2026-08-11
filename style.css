@@ -67,12 +67,19 @@ h1{
 }
 
 .pill{
-    padding:8px 14px;
-    border-radius:999px;
-    cursor:pointer;
-    font-size:.95rem;
-    transition:.2s;
-    position:relative;
+2
+padding:6px 12px;
+3
+border-radius:999px;
+4
+cursor:pointer;
+5
+font-size:.90rem;
+6
+transition:.2s;
+7
+position:relative;
+8
 }
 
 .pill:hover{
