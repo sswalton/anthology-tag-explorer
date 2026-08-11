@@ -1,128 +1,121 @@
 let tags = [];
+let activeFilter = "all";
 
 fetch("tags.json")
 .then(r => r.json())
 .then(data => {
     tags = data;
-    buildFilters();
     render();
 });
 
-function buildFilters() {
+document.addEventListener("click", e => {
 
-    const categories =
-        [...new Set(tags.map(t => t.category))]
-        .sort();
-
-    const select =
-        document.getElementById("categoryFilter");
-
-    categories.forEach(cat => {
-        const option =
-            document.createElement("option");
-
-        option.value = cat;
-        option.textContent = cat;
-
-        select.appendChild(option);
-    });
+    if(!e.target.classList.contains("filter-btn")) return;
 
     document
-      .getElementById("search")
-      .addEventListener("input", render);
+        .querySelectorAll(".filter-btn")
+        .forEach(btn => btn.classList.remove("active"));
 
-    document
-      .getElementById("categoryFilter")
-      .addEventListener("change", render);
+    e.target.classList.add("active");
 
-    document
-      .getElementById("statusFilter")
-      .addEventListener("change", render);
-}
+    activeFilter = e.target.dataset.filter;
 
-function render() {
+    render();
+});
 
-    const search =
-      document.getElementById("search")
-      .value
-      .toLowerCase();
+document
+    .getElementById("search")
+    .addEventListener("input", render);
 
-    const category =
-      document.getElementById("categoryFilter")
-      .value;
+function render(){
 
-    const status =
-      document.getElementById("statusFilter")
-      .value;
+    const term =
+        document.getElementById("search")
+        .value
+        .toLowerCase();
 
-    const filtered = tags.filter(t => {
+    let filtered = tags.filter(tag => {
 
         const matchesSearch =
-          t.tag.toLowerCase().includes(search);
+            tag.tag.toLowerCase().includes(term);
 
-        const matchesCategory =
-          !category || t.category === category;
+        if(activeFilter === "review"){
+            return matchesSearch && tag.note;
+        }
 
-        const matchesStatus =
-          !status || t.status === status;
+        if(activeFilter === "all"){
+            return matchesSearch;
+        }
 
-        return matchesSearch
-            && matchesCategory
-            && matchesStatus;
-
+        return matchesSearch &&
+               tag.status === activeFilter;
     });
 
-    drawCards(filtered);
+    drawStats(filtered);
+
+    drawGroup(
+       "strong-support",
+       filtered.filter(x => x.status === "Strong Support"),
+       "strong"
+    );
+
+    drawGroup(
+       "moderate-support",
+       filtered.filter(x => x.status === "Moderate Support"),
+       "moderate"
+    );
+
+    drawGroup(
+       "limited-support",
+       filtered.filter(x => x.status === "Limited Support"),
+       "limited"
+    );
+
+    drawGroup(
+       "not-selected",
+       filtered.filter(x => x.status === "Not Selected"),
+       "notselected"
+    );
 }
 
-function drawCards(list){
+function drawStats(list){
 
-    const results =
-      document.getElementById("results");
+    document.getElementById("summary").innerHTML = `
+      <div class="stat">${list.length} visible tags</div>
+    `;
+}
 
-    results.innerHTML = "";
+function drawGroup(id,list,className){
+
+    const container =
+      document.getElementById(id);
+
+    container.innerHTML = "";
 
     list.forEach(tag => {
 
-        const card =
+        const pill =
             document.createElement("div");
 
-        card.className = "card";
+        pill.className =
+            `pill ${className} ${tag.note ? "review" : ""}`;
 
-        let badgeClass = "notselected";
+        pill.innerHTML = `
+            ${tag.tag} (${tag.count})
 
-        if(tag.status === "Strong Support")
-            badgeClass="strong";
-
-        if(tag.status === "Moderate Support")
-            badgeClass="moderate";
-
-        if(tag.status === "Limited Support")
-            badgeClass="limited";
-
-        card.innerHTML = `
-            <h3>${tag.tag}</h3>
-
-            <span class="badge ${badgeClass}">
-              ${tag.status}
-            </span>
-
-            <p>
-              ${tag.category}<br>
-              Votes: ${tag.count}
-            </p>
-
-            ${
-              tag.note
-              ? `<div class="note">${tag.note}</div>`
-              : ""
-            }
+            <div class="tooltip">
+                <strong>${tag.tag}</strong><br>
+                Category: ${tag.category}<br>
+                Status: ${tag.status}<br>
+                Votes: ${tag.count}
+                ${
+                    tag.note
+                    ? `<hr>${tag.note}`
+                    : ""
+                }
+            </div>
         `;
 
-        results.appendChild(card);
+        container.appendChild(pill);
     });
-
-    document.getElementById("stats")
-      .innerHTML =
-      `<p><strong>${list.length}</strong> tags displayed</p>`;
 }
