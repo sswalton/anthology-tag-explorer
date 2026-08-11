@@ -39,6 +39,10 @@ h1 {
     border-radius: 20px;
     cursor: pointer;
     background: #ddd;
+        
+    font-family: inherit;
+    font-size: inherit;
+    color: #222;
 }
 
 .active-view {
