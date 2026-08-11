@@ -3,6 +3,7 @@ body {
     margin: auto;
     padding: 30px;
     font-family: Georgia, serif;
+    font-size: 18px;
     background: #fafafa;
     color: #222;
 }
@@ -43,7 +44,7 @@ a.view-btn {
     color: #222;
     text-decoration: none;
     font-family: system-ui, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     display: inline-block;
 }
 
@@ -62,7 +63,7 @@ a.view-btn:hover {
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
-    font-size: 0.9rem;
+    font-size: 1rem;
 }
 
 .legend-item {
@@ -97,7 +98,7 @@ a.view-btn:hover {
     cursor: pointer;
     background: #ddd;
     font-family: system-ui, sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     color: #222;
 }
 
@@ -137,7 +138,7 @@ a.view-btn:hover {
     display: inline-block;
     padding: 6px 12px;
     border-radius: 999px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     cursor: pointer;
     position: relative;
     white-space: nowrap;
