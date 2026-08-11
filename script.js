@@ -2,6 +2,39 @@ let tags = [];
 let activeFilter = "all";
 let currentView = "tags";
 
+const similarTerms = [
+
+  "Religion",
+  "Religion?",
+
+  "Photography",
+  "photographs",
+
+  "Diary",
+  "Diary/Journal",
+  "Diary/Journals",
+  "Journal",
+
+  "Correspondence",
+  "Letter or Correspondence",
+  "Letters",
+
+  "Race",
+  "Race & Ethnicity",
+
+  "Gender/Sexuality",
+  "Gender & Sexuality",
+  "Gender and Sexuality",
+  "Sexuality",
+
+  "Family",
+  "Family/Community",
+
+  "School",
+  "Schoolwork / educational material"
+
+];
+
 fetch("tags.json")
   .then(response => response.json())
   .then(data => {
@@ -59,8 +92,7 @@ document.addEventListener("click", event => {
 
   event.target.classList.add("active");
 
-  activeFilter =
-    event.target.dataset.filter;
+  activeFilter = event.target.dataset.filter;
 
   render();
 
@@ -81,6 +113,13 @@ function render() {
 
     if (activeFilter === "review") {
       return matchesSearch && tag.note;
+    }
+
+    if (activeFilter === "similar") {
+      return (
+        matchesSearch &&
+        similarTerms.includes(tag.tag)
+      );
     }
 
     if (activeFilter === "all") {
@@ -181,11 +220,21 @@ function drawGroup(
 
       row.className = "list-row";
 
-row.innerHTML = `
-  <span>${tag.tag}${tag.note ? " ⚠" : ""}</span>
-  <span>${tag.count}</span>
-`;
+      const termClass =
+        similarTerms.includes(tag.tag)
+          ? "similar-text"
+          : "";
+
+      row.innerHTML = `
+        <span class="${termClass}">
+          ${tag.tag}${tag.note ? " ⚠" : ""}
+        </span>
+
+        <span>${tag.count}</span>
+      `;
+
       container.appendChild(row);
+
     });
 
     return;
@@ -196,8 +245,13 @@ row.innerHTML = `
     const pill =
       document.createElement("div");
 
+    const similarClass =
+      similarTerms.includes(tag.tag)
+        ? "similar-outline"
+        : "";
+
     pill.className =
-      `pill ${colorClass} ${tag.note ? "review" : ""}`;
+      `pill ${colorClass} ${tag.note ? "review" : ""} ${similarClass}`;
 
     const noteSection =
       tag.note
