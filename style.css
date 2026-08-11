@@ -205,3 +205,12 @@ h1 {
     border: 2px solid #8e44ad;
 }
 ``
+.similar-outline{
+    border:2px solid #7d3c98;
+}
+
+.similar-text{
+    color:#7d3c98;
+    font-weight:600;
+}
+``
