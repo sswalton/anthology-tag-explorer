@@ -134,3 +134,28 @@ z-index:9999;
     padding:10px 14px;
     border-radius:10px;
 }
+.legend{
+    margin:15px 0;
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    font-size:.9rem;
+}
+
+.legend-item{
+    display:flex;
+    align-items:center;
+    gap:8px;
+}
+
+.legend-pill{
+    width:18px;
+    height:18px;
+    border-radius:999px;
+    display:inline-block;
+}
+
+.review-outline{
+    background:white;
+    border:2px solid #f39c12;
+}
