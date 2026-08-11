@@ -1,6 +1,5 @@
 let tags = [];
 let activeFilter = "all";
-let currentView = "tags";
 
 fetch("tags.json")
   .then(response => response.json())
@@ -15,59 +14,19 @@ document.addEventListener("click", event => {
     return;
   }
 
-  const filter = event.target.dataset.filter;
+  document
+    .querySelectorAll(".filter-btn")
+    .forEach(btn => btn.classList.remove("active"));
 
-  if (filter) {
+  event.target.classList.add("active");
+  activeFilter = event.target.dataset.filter;
 
-    document
-      .querySelectorAll(".filter-btn[data-filter]")
-      .forEach(btn => btn.classList.remove("active"));
-
-    event.target.classList.add("active");
-
-    activeFilter = filter;
-
-    render();
-  }
+  render();
 });
 
 document
   .getElementById("search")
   .addEventListener("input", render);
-
-document
-  .getElementById("tag-view-btn")
-  .addEventListener("click", () => {
-
-    currentView = "tags";
-
-    document
-      .getElementById("tag-view-btn")
-      .classList.add("active-view");
-
-    document
-      .getElementById("list-view-btn")
-      .classList.remove("active-view");
-
-    render();
-  });
-
-document
-  .getElementById("list-view-btn")
-  .addEventListener("click", () => {
-
-    currentView = "list";
-
-    document
-      .getElementById("list-view-btn")
-      .classList.add("active-view");
-
-    document
-      .getElementById("tag-view-btn")
-      .classList.remove("active-view");
-
-    render();
-  });
 
 function render() {
 
@@ -97,24 +56,16 @@ function render() {
   });
 
   const strong =
-    filtered.filter(
-      tag => tag.status === "Strong Support"
-    );
+    filtered.filter(tag => tag.status === "Strong Support");
 
   const moderate =
-    filtered.filter(
-      tag => tag.status === "Moderate Support"
-    );
+    filtered.filter(tag => tag.status === "Moderate Support");
 
   const limited =
-    filtered.filter(
-      tag => tag.status === "Limited Support"
-    );
+    filtered.filter(tag => tag.status === "Limited Support");
 
   const notSelected =
-    filtered.filter(
-      tag => tag.status === "Not Selected"
-    );
+    filtered.filter(tag => tag.status === "Not Selected");
 
   updateHeadings(
     strong.length,
@@ -126,29 +77,10 @@ function render() {
   document.getElementById("summary").innerHTML =
     `<div class="stat">${filtered.length} visible tags</div>`;
 
-  drawGroup(
-    "strong-support",
-    strong,
-    "strong"
-  );
-
-  drawGroup(
-    "moderate-support",
-    moderate,
-    "moderate"
-  );
-
-  drawGroup(
-    "limited-support",
-    limited,
-    "limited"
-  );
-
-  drawGroup(
-    "not-selected",
-    notSelected,
-    "notselected"
-  );
+  drawGroup("strong-support", strong, "strong");
+  drawGroup("moderate-support", moderate, "moderate");
+  drawGroup("limited-support", limited, "limited");
+  drawGroup("not-selected", notSelected, "notselected");
 }
 
 function updateHeadings(
@@ -161,7 +93,9 @@ function updateHeadings(
   const headers =
     document.querySelectorAll(".group h2");
 
-  if (headers.length < 4) return;
+  if (headers.length < 4) {
+    return;
+  }
 
   headers[0].textContent =
     `Strong Support (${strong})`;
@@ -185,33 +119,11 @@ function drawGroup(
   const container =
     document.getElementById(containerId);
 
-  container.innerHTML = "";
-
-  if (currentView === "list") {
-
-    data.forEach(tag => {
-
-      const row =
-        document.createElement("div");
-
-      row.className = "list-row";
-
-      row.innerHTML = `
-        <span>
-          ${tag.tag}
-          ${tag.note ? " ⚠" : ""}
-        </span>
-
-        <span>
-          ${tag.count}
-        </span>
-      `;
-
-      container.appendChild(row);
-    });
-
+  if (!container) {
     return;
   }
+
+  container.innerHTML = "";
 
   data.forEach(tag => {
 
@@ -221,18 +133,20 @@ function drawGroup(
     pill.className =
       `pill ${colorClass} ${tag.note ? "review" : ""}`;
 
+    const noteIcon =
+      tag.note ? " ⚠" : "";
+
     const noteSection =
       tag.note
         ? `
-            <hr>
-            <strong>Discussion Note:</strong><br>
-            ${tag.note}
-          `
+          <hr>
+          <strong>Discussion Note:</strong><br>
+          ${tag.note}
+        `
         : "";
 
     pill.innerHTML = `
-      ${tag.tag} (${tag.count})
-      ${tag.note ? " ⚠" : ""}
+      ${tag.tag} (${tag.count})${noteIcon}
 
       <div class="tooltip">
         <strong>${tag.tag}</strong>
