@@ -241,16 +241,19 @@ h1 {
     margin-bottom:0;
 }
 
-a.view-btn{
-    display:inline-block;
-    padding:8px 14px;
-    border-radius:20px;
-    background:#ddd;
-    color:inherit;
-    text-decoration:none;
-    font:inherit;
+a.view-btn {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 20px;
+    background: #ddd;
+     
+    font-family: inherit;
+    font-size: inherit;
+    color: #222;
+    
+    text-decoration: none;
 }
 
-a.view-btn:hover{
-    background:#ccc;
+a.view-btn:hover {
+    background: #ccc;
 }
