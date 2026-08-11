@@ -1,39 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Anthology Tag Explorer</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Anthology Tag Explorer</title>
 
-  <link rel="stylesheet" href="style.css">
-
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  
+
 <header>
-  <h1>Anthology Tag Explorer</h1>
-  <p>Browse and review proposed anthology tags.</p>
+    <h1>Anthology Tag Explorer</h1>
+    <p class="subtitle">
+        Browse, review, and explore authority tags.
+    </p>
 </header>
 
-<section class="controls">
-  <input id="search" type="text" placeholder="Search tags...">
+<section class="toolbar">
 
-  <select id="categoryFilter">
-    <option value="">All Categories</option>
-  </select>
+    <input
+        id="search"
+        type="text"
+        placeholder="Search tags..."
+    >
 
-  <select id="statusFilter">
-    <option value="">All Statuses</option>
-    <option>Strong Support</option>
-    <option>Moderate Support</option>
-    <option>Limited Support</option>
-    <option>Not Selected</option>
-  </select>
+    <div class="filters">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="Strong Support">
+            Strong Support
+        </button>
+
+        <button class="filter-btn" data-filter="Moderate Support">
+            Moderate Support
+        </button>
+
+        <button class="filter-btn" data-filter="Limited Support">
+            Limited Support
+        </button>
+
+        <button class="filter-btn" data-filter="Not Selected">
+            Not Selected
+        </button>
+
+        <button class="filter-btn" data-filter="review">
+            Needs Review
+        </button>
+
+    </div>
+
 </section>
 
-<section id="stats"></section>
+<section id="summary"></section>
 
-<section id="results"></section>
+<section class="group">
+    <h2>Strong Support</h2>
+    <div id="strong-support" class="pill-container"></div>
+</section>
+
+<section class="group">
+    <h2>Moderate Support</h2>
+    <div id="moderate-support" class="pill-container"></div>
+</section>
+
+<section class="group">
+    <h2>Limited Support</h2>
+    <div id="limited-support" class="pill-container"></div>
+</section>
+
+<section class="group">
+    <h2>Not Selected</h2>
+    <div id="not-selected" class="pill-container"></div>
+</section>
 
 <script src="script.js"></script>
+
 </body>
 </html>
