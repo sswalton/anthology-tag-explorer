@@ -57,16 +57,26 @@ h1{
 }
 
 .pill{
-    padding:8px 14px;
-    border-radius:999px;
-    cursor:pointer;
-    font-size:.95rem;
-    transition:.2s;
-    position:relative;
+2
+padding:8px 14px;
+3
+border-radius:999px;
+4
+cursor:pointer;
+5
+font-size:.95rem;
+6
+transition:.2s;
+7
+position:relative;
+8
+z-index:1;
+9
 }
 
 .pill:hover{
     transform:translateY(-1px);
+    z-index:1000;
 }
 
 .strong{
@@ -90,7 +100,11 @@ h1{
 }
 
 .tooltip{
-    display:none;
+2
+display:none;
+3
+z-index:9999;
+4
 }
 
 .pill:hover .tooltip{
