@@ -39,7 +39,7 @@ h1 {
     border-radius: 20px;
     cursor: pointer;
     background: #ddd;
-        
+     
     font-family: inherit;
     font-size: inherit;
     color: #222;
@@ -246,11 +246,7 @@ a.view-btn {
     padding: 8px 14px;
     border-radius: 20px;
     background: #ddd;
-     
-    font-family: inherit;
-    font-size: inherit;
     color: #222;
-    
     text-decoration: none;
 }
 
