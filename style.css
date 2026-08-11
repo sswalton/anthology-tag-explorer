@@ -85,11 +85,6 @@ h1 {
     border-radius: 20px;
     cursor: pointer;
     background: #ddd;
-    transition: 0.2s;
-}
-
-.filter-btn:hover {
-    background: #ccc;
 }
 
 .filter-btn.active {
@@ -134,11 +129,6 @@ h1 {
     cursor: pointer;
     position: relative;
     white-space: nowrap;
-    transition: 0.2s;
-}
-
-.pill:hover {
-    opacity: 0.9;
 }
 
 .strong {
@@ -173,18 +163,14 @@ h1 {
     bottom: 125%;
     left: 50%;
     transform: translateX(-50%);
-
     width: 280px;
-
     background: white;
     border: 1px solid #ddd;
     border-radius: 10px;
     padding: 12px;
-
     line-height: 1.4;
     font-size: 0.9rem;
     white-space: normal;
-
     box-shadow: 0 4px 12px rgba(0,0,0,.15);
     z-index: 99999;
 }
@@ -200,9 +186,9 @@ h1 {
 .list-row {
     display: grid;
     grid-template-columns: 1fr 60px;
-    align-items: center;
-
+    width: 100%;
     padding: 6px 0;
+    box-sizing: border-box;
     border-bottom: 1px solid #eee;
 }
 
@@ -213,11 +199,9 @@ h1 {
 .list-row span:last-child {
     text-align: right;
     color: #666;
-    font-size: 0.9rem;
 }
-
-/* FUTURE OVERLAP HIGHLIGHTING */
 
 .similar-outline {
     border: 2px solid #8e44ad;
 }
+``
