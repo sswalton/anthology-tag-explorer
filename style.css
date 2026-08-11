@@ -203,3 +203,12 @@ h1 {
     cursor:pointer;
     background:#ddd;
 }
+.list-row span:last-child{
+2
+color:#666;
+3
+min-width:60px;
+4
+text-align:right;
+5
+}
